@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://ccaiqpgcjx0ok"
+path="res://.godot/imported/red_poppies.aseprite-01552d3611e1d08584c9f50c89c193e9.res"
+
+[deps]
+
+source_file="res://art/src/environment/objects/red_poppies.aseprite"
+dest_files=["res://.godot/imported/red_poppies.aseprite-01552d3611e1d08584c9f50c89c193e9.res"]
+
+[params]
+
