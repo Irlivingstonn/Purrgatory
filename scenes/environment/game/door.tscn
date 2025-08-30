@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://c8d7il67feiw2" path="res://door.gd" id="1_fkoen"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qcva1"]
-size = Vector2(20, 33.1085)
+size = Vector2(33.75, 33.1085)
 
 [node name="door" type="Area2D"]
 script = ExtResource("1_fkoen")

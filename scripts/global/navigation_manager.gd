@@ -3,7 +3,7 @@ extends Node
 const scene_kitchen := "res://scenes/environment/game/rooms/kitchen.tscn"
 const scene_living_room := "res://scenes/environment/game/rooms/living_room.tscn"
 const scene_pantry := "res://scenes/environment/game/rooms/pantry.tscn"
-const scene_bedroom := "res://scenes/environment/game/rooms/bedroom.tscn"
+const scene_hallway_North := "res://scenes/environment/game/rooms/hallway_North.tscn"
 
 signal on_trigger_player_spawn
 var spawn_door_tag
@@ -19,8 +19,8 @@ func go_to_level(level_tag, destination_tag, Rooms, Tags):
 			scene_to_load = scene_kitchen
 		Rooms.LIVING_ROOM:
 			scene_to_load = scene_living_room
-		Rooms.BEDROOM:
-			scene_to_load = scene_bedroom
+		Rooms.HALLWAY_NORTH:
+			scene_to_load = scene_hallway_North
 		Rooms.PANTRY:
 			scene_to_load = scene_pantry
 		
