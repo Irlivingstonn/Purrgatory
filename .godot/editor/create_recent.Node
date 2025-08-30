@@ -1,0 +1,14 @@
+StaticBody2D
+Area2D
+CollisionPolygon2D
+CollisionShape2D
+Node
+Sprite2D
+CharacterBody2D
+Node2D
+TileMap
+Polygon2D
+AnimationPlayer
+ColorRect
+CanvasLayer
+PointLight2D

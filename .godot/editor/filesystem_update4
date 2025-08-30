@@ -1,0 +1,13 @@
+res://scenes/environment/game/rooms/hallway_North.tscn
+res://addons/phantom_camera/themes/theme.tres
+res://scenes/characters/player/player_anim_states.tres
+res://scenes/characters/witch/witch.tscn
+res://scenes/environment/game/door.tscn
+res://scenes/characters/player/player.tscn
+res://scenes/global/transition_screen.tscn
+res://scenes/environment/game/rooms/kitchen.tscn
+res://scenes/environment/game/rooms/living_room.tscn
+res://scenes/environment/game/rooms/bedroom.tscn
+res://door.gd
+res://scripts/global/navigation_manager.gd
+res://scenes/environment/game/rooms/courtyard.tscn
