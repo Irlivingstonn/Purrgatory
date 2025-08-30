@@ -131,10 +131,10 @@ starting_direction = Vector2(1, 1)
 physics_interpolation_mode = 1
 position = Vector2(40.3333, 22)
 zoom = Vector2(3.75, 3.75)
-limit_left = -330
-limit_top = -786
-limit_right = 274
-limit_bottom = -21
+limit_left = -522
+limit_top = -146
+limit_right = 183
+limit_bottom = 213
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D"]
 process_priority = 300

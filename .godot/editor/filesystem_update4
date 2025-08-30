@@ -8,6 +8,8 @@ res://scenes/global/transition_screen.tscn
 res://scenes/environment/game/rooms/kitchen.tscn
 res://scenes/environment/game/rooms/living_room.tscn
 res://scenes/environment/game/rooms/bedroom.tscn
+res://scenes/environment/game/rooms/courtyard.tscn
+res://scenes/environment/game/rooms/room.tscn
+res://scenes/environment/game/rooms/hallway_Lower_Left.tscn
 res://door.gd
 res://scripts/global/navigation_manager.gd
-res://scenes/environment/game/rooms/courtyard.tscn

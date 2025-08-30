@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://brrx6yl40r7hl" path="res://scenes/environment/game/door.tscn" id="5_8lrrs"]
 [ext_resource type="PackedScene" uid="uid://cjoxk8uys8pgg" path="res://scenes/global/transition_screen.tscn" id="6_hetwj"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_63ipk"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jcmus"]
 texture = ExtResource("2_8molc")
 1:0/0 = 0
 2:0/0 = 0
@@ -94,7 +94,7 @@ texture = ExtResource("2_8molc")
 3:5/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_lrvsk"]
-sources/0 = SubResource("TileSetAtlasSource_63ipk")
+sources/0 = SubResource("TileSetAtlasSource_jcmus")
 
 [sub_resource type="Environment" id="Environment_k3e14"]
 background_mode = 3

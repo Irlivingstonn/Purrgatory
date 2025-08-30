@@ -215,16 +215,16 @@ script = ExtResource("2_5nesc")
 
 [node name="Doors" type="Node" parent="."]
 
-[node name="door_South" parent="Doors" instance=ExtResource("3_genjy")]
+[node name="door_North" parent="Doors" instance=ExtResource("3_genjy")]
 position = Vector2(-8, 93)
 scale = Vector2(2.4, 0.160864)
 destination_level_tag = 1
 spawn_direction = 1
 
-[node name="CollisionShape2D" parent="Doors/door_South" index="0"]
+[node name="CollisionShape2D" parent="Doors/door_North" index="0"]
 position = Vector2(0.208333, 0)
 
-[node name="Spawn" parent="Doors/door_South" index="1"]
+[node name="Spawn" parent="Doors/door_North" index="1"]
 position = Vector2(0, -124.329)
 scale = Vector2(0.083333, 1.24867)
 
@@ -239,14 +239,25 @@ spawn_direction = 3
 position = Vector2(-175, 0)
 scale = Vector2(1, 0.382352)
 
+[node name="door_South" parent="Doors" instance=ExtResource("3_genjy")]
+position = Vector2(-232, 398)
+scale = Vector2(2.36997, 0.0792946)
+destination_level_tag = 5
+spawn_direction = 1
+metadata/_edit_group_ = true
+
+[node name="Spawn" parent="Doors/door_South" index="1"]
+position = Vector2(0, -390.947)
+scale = Vector2(0.284486, 0.834585)
+
 [node name="Camera2D" type="Camera2D" parent="."]
 physics_interpolation_mode = 1
 position = Vector2(-9, 51)
 zoom = Vector2(3.75, 3.75)
-limit_left = -330
-limit_top = -786
-limit_right = 274
-limit_bottom = -21
+limit_left = -522
+limit_top = -146
+limit_right = 183
+limit_bottom = 213
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D"]
 process_priority = 300
@@ -282,5 +293,6 @@ shape = SubResource("RectangleShape2D_0q3y5")
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_0q3y5")
 
-[editable path="Doors/door_South"]
+[editable path="Doors/door_North"]
 [editable path="Doors/door_East"]
+[editable path="Doors/door_South"]

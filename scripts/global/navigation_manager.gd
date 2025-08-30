@@ -5,6 +5,7 @@ const scene_living_room := "res://scenes/environment/game/rooms/living_room.tscn
 const scene_pantry := "res://scenes/environment/game/rooms/pantry.tscn"
 const scene_hallway_North := "res://scenes/environment/game/rooms/hallway_North.tscn"
 const scene_bedroom := "res://scenes/environment/game/rooms/bedroom.tscn"
+const scene_hallway_lower_left := "res://scenes/environment/game/rooms/hallway_Lower_Left.tscn"
 
 signal on_trigger_player_spawn
 var spawn_door_tag
@@ -26,6 +27,8 @@ func go_to_level(level_tag, destination_tag, Rooms, Tags):
 			scene_to_load = scene_pantry
 		Rooms.BEDROOM:
 			scene_to_load = scene_bedroom
+		Rooms.HALLWAY_LOWER_LEFT:
+			scene_to_load = scene_hallway_lower_left
 		
 			
 	if scene_to_load != null:
