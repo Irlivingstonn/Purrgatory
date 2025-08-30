@@ -2,7 +2,7 @@ extends Area2D
 
 class_name Door
 
-enum Rooms { KITCHEN = 0, LIVING_ROOM = 1, HALLWAY_NORTH = 2, PANTRY = 3}
+enum Rooms { KITCHEN = 0, LIVING_ROOM = 1, HALLWAY_NORTH = 2, PANTRY = 3, BEDROOM = 4}
 enum Tags { North, South, West, East }
 enum Directions { UP, DOWN, LEFT, RIGHT }
 

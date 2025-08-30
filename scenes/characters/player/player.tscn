@@ -178,7 +178,7 @@ nodes/TimeScale/node = SubResource("AnimationNodeTimeScale_t61fv")
 nodes/TimeScale/position = Vector2(80, 80)
 node_connections = [&"TimeScale", 0, &"PlayerStates", &"output", 0, &"TimeScale"]
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D"]
 y_sort_enabled = true
 script = ExtResource("1_7uws0")
 sprint_speed = 170.0
