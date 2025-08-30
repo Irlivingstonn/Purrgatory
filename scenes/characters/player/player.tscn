@@ -1,0 +1,233 @@
+[gd_scene load_steps=17 format=4 uid="uid://m4xuii1sl2gx"]
+
+[ext_resource type="Script" uid="uid://cmg2rq14uk5ob" path="res://scripts/characters/player/player.gd" id="1_7uws0"]
+[ext_resource type="AnimationNodeStateMachine" uid="uid://bknesjtimkekx" path="res://scenes/characters/player/player_anim_states.tres" id="2_t61fv"]
+
+[sub_resource type="PortableCompressedTexture2D" id="PortableCompressedTexture2D_t61fv"]
+_data = PackedByteArray("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")
+size_override = Vector2(550, 400)
+
+[sub_resource type="Animation" id="Animation_42irl"]
+length = 0.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = false
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 8, 0, 7]
+}
+
+[sub_resource type="Animation" id="Animation_t61fv"]
+length = 0.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = false
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [9, 17, 9, 16]
+}
+
+[sub_resource type="Animation" id="Animation_qd3e3"]
+length = 0.1
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = false
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_6avc5"]
+length = 0.1
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = false
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [15]
+}
+
+[sub_resource type="Animation" id="Animation_mk55u"]
+length = 0.1
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = false
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [12]
+}
+
+[sub_resource type="Animation" id="Animation_3xnwo"]
+length = 0.1
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = false
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [9]
+}
+
+[sub_resource type="Animation" id="Animation_686vu"]
+length = 0.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = false
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [15, 14, 15, 13]
+}
+
+[sub_resource type="Animation" id="Animation_hss88"]
+length = 0.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = false
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [12, 11, 12, 10]
+}
+
+[sub_resource type="Animation" id="Animation_xuses"]
+length = 0.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = false
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 6, 0, 5]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6avc5"]
+_data = {
+&"backward": SubResource("Animation_42irl"),
+&"forward": SubResource("Animation_t61fv"),
+&"idle_down": SubResource("Animation_qd3e3"),
+&"idle_left": SubResource("Animation_6avc5"),
+&"idle_right": SubResource("Animation_mk55u"),
+&"idle_up": SubResource("Animation_3xnwo"),
+&"left": SubResource("Animation_686vu"),
+&"right": SubResource("Animation_hss88"),
+&"run_back": SubResource("Animation_xuses")
+}
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_t61fv"]
+radius = 4.0
+height = 28.0
+
+[sub_resource type="AnimationNodeTimeScale" id="AnimationNodeTimeScale_t61fv"]
+
+[sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_686vu"]
+graph_offset = Vector2(-367.913, 63.2253)
+nodes/PlayerStates/node = ExtResource("2_t61fv")
+nodes/PlayerStates/position = Vector2(-220, 60)
+nodes/TimeScale/node = SubResource("AnimationNodeTimeScale_t61fv")
+nodes/TimeScale/position = Vector2(80, 80)
+node_connections = [&"TimeScale", 0, &"PlayerStates", &"output", 0, &"TimeScale"]
+
+[node name="Player" type="CharacterBody2D"]
+y_sort_enabled = true
+script = ExtResource("1_7uws0")
+sprint_speed = 170.0
+starting_direction = Vector2(0, -1)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = SubResource("PortableCompressedTexture2D_t61fv")
+hframes = 5
+vframes = 4
+metadata/_aseprite_wizard_interface_config_ = {
+"pending_changes": {}
+}
+metadata/_aseprite_wizard_config_ = {
+"convert_fps_field": 60.0,
+"convert_ms_field": 16.0,
+"convert_to_fps": false,
+"embed_tex": true,
+"i_mode": 0,
+"keep_anim_length": false,
+"layers": [],
+"o_ex_p": "",
+"o_folder": "",
+"o_name": "",
+"only_visible": false,
+"player": "AnimationPlayer",
+"scale": "1.0",
+"slice": "",
+"source": "res://art/src/characters/dummy/dummy.aseprite",
+"source_uid": 8103583961136578788
+}
+metadata/_aseprite_wizard_source_file_hash_ = "37eaa39af9cb3d046e21b02f58889340"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_6avc5")
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+y_sort_enabled = true
+position = Vector2(1, 27)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_t61fv")
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+tree_root = SubResource("AnimationNodeBlendTree_686vu")
+anim_player = NodePath("../AnimationPlayer")
+parameters/PlayerStates/conditions/idle = false
+parameters/PlayerStates/conditions/run = false
+parameters/PlayerStates/idle/blend_position = Vector2(-0.00527984, -0.212108)
+parameters/PlayerStates/walk/blend_position = Vector2(0.0221753, 0.725112)
+parameters/TimeScale/scale = 0.75

@@ -1,0 +1,98 @@
+[gd_scene load_steps=4 format=4 uid="uid://bco30hiha2miw"]
+
+[ext_resource type="Script" uid="uid://cpxnlc4x2uupg" path="res://scripts/ui/dialouge/dialogue_system.gd" id="1_qrwol"]
+[ext_resource type="FontFile" uid="uid://2obtfelt24i2" path="res://art/src/fonts/FontsFree-Net-TrajanPro-Regular.ttf" id="2_qrwol"]
+
+[sub_resource type="PortableCompressedTexture2D" id="PortableCompressedTexture2D_gl817"]
+_data = PackedByteArray("AAADAAUAAAABAAAAoAUAABgBAAA8AgAAUklGRjQCAABXRUJQVlA4TCgCAAAvn8VFEF9hkG2kjuAB3h/1HAyyjRxbcxyv9Gbatk3FhbJ3818H5e/fnzaQCAIVIIEIEoAUBALZRSSwSxtAciRJkVRdM7PMzMz1/xcOuapPq3VtRPR/AsryKuNl7Srka1QlX6lK+QpVy5dUMV9Q1VzRqpwLWo3/4//4P/6P/wV0cOwxDZY9nsGzxzKY9jgG1/azIf6L/361Jqh3Tbp1sSnqXVN0hnrXDN1AvWsD3US9axPdQr1rC91GvWsb3UG9awfdRb1rt1sX20O9aw/dR71rHz1AvesAPUS96xA9Qr3rqFsXO0a96xg9Qb3rBD1FvesUPUO96ww9R73rvFsXu0C96wK9RL3rslsXu0K96wq9Rr3rGr1BvesGvUW96xa9Q73rDr1HvesefUC96wF9RL3rEX1CvesJfUa96xl9Qb3rpVsXe0W96xV9Q73rrVsXe0e96x39QL3rA/1EvesT/UK96wv9Rr3ru1sX+0G96wdtqHe1buO/+C/+i//iv/gv/ov/4r/4L/6L/+K/+C/+i//iv/gv/ov/4r/4L/6L/+K/+C/+i//iv/gv/ov/4r/4L/6L/+K/+C/+i//iv/gv/ov/4r/4L/6L/+K/+C/+i//iv/gv/ov/4r//XlXXqp21BdW06sLWXfWs2l9bVC2rLm5jqI5VR9GWqHbr3bda/7bVxuhabayW1eL/+D/+j///Phc7K4JW3KzMm1lZ7GVluZWVlY2srG1jZTk=")
+size_override = Vector2(1440, 280)
+
+[node name="DialogueSystem" type="Node2D"]
+z_index = 4096
+script = ExtResource("1_qrwol")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(0.203, 0.203)
+texture = SubResource("PortableCompressedTexture2D_gl817")
+offset = Vector2(0, 10)
+metadata/_aseprite_wizard_interface_config_ = {
+"pending_changes": {}
+}
+metadata/_aseprite_wizard_config_ = {
+"convert_fps_field": 60.0,
+"convert_ms_field": 16.0,
+"convert_to_fps": false,
+"embed_tex": true,
+"i_mode": 1,
+"keep_anim_length": false,
+"layers": [],
+"o_ex_p": "",
+"o_folder": "",
+"o_name": "",
+"only_visible": false,
+"player": "",
+"scale": "1.0",
+"slice": "",
+"source": "res://art/src/ui/talking_background.aseprite",
+"source_uid": 4217833354494714693
+}
+metadata/_aseprite_wizard_source_file_hash_ = "8aa37cb17098d69bcf70894e19ab1474"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+offset_left = -125.0
+offset_top = -8.0
+offset_right = 4875.0
+offset_bottom = 592.0
+scale = Vector2(0.18, 0.18)
+
+[node name="SpeakerParent" type="Control" parent="HBoxContainer"]
+custom_minimum_size = Vector2(56, 0)
+layout_mode = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="HBoxContainer/SpeakerParent"]
+texture_filter = 1
+position = Vector2(28, 28)
+metadata/_aseprite_wizard_interface_config_ = {
+"pending_changes": {}
+}
+metadata/_aseprite_wizard_config_ = {
+"convert_fps_field": 60.0,
+"convert_ms_field": 16.0,
+"convert_to_fps": false,
+"embed_tex": true,
+"i_mode": 1,
+"keep_anim_length": false,
+"layers": [],
+"o_ex_p": "",
+"o_folder": "",
+"o_name": "",
+"only_visible": false,
+"player": "",
+"scale": "1.0",
+"slice": "",
+"source": "res://art/src/ui/talking_background.aseprite",
+"source_uid": 4217833354494714693
+}
+metadata/_aseprite_wizard_source_file_hash_ = "8aa37cb17098d69bcf70894e19ab1474"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="RichTextLabel" type="RichTextLabel" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/normal_font = ExtResource("2_qrwol")
+theme_override_font_sizes/normal_font_size = 50
+bbcode_enabled = true
+text = "Hello! Come In he"
+scroll_active = false
+visible_characters_behavior = 1
+
+[node name="button_container" type="HBoxContainer" parent="HBoxContainer/VBoxContainer"]
+visible = false
+layout_mode = 2
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+max_polyphony = 1000

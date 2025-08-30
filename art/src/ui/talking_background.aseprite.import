@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://b1dfdmtvor8wn"
+path="res://.godot/imported/talking_background.aseprite-60b7995b76bbf32a70af0550f5c86386.res"
+
+[deps]
+
+source_file="res://art/src/ui/talking_background.aseprite"
+dest_files=["res://.godot/imported/talking_background.aseprite-60b7995b76bbf32a70af0550f5c86386.res"]
+
+[params]
+

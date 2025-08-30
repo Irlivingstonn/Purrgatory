@@ -1,0 +1,25 @@
+[gd_scene load_steps=6 format=3 uid="uid://dce3s0w6dd6ho"]
+
+[ext_resource type="FontFile" uid="uid://q8w6d0vjqnyv" path="res://art/src/fonts/vag-rounded-bt.ttf" id="1_ignf7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7jfv7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cv4xe"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tpmh7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wh1ik"]
+
+[node name="DialogueButton" type="Button"]
+offset_right = 8.0
+offset_bottom = 8.0
+size_flags_horizontal = 3
+theme_override_colors/font_hover_color = Color(0.810415, 0.598943, 1.92523e-07, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(0.811765, 0.6, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.811765, 0.6, 0, 1)
+theme_override_fonts/font = ExtResource("1_ignf7")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_7jfv7")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_cv4xe")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_tpmh7")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_wh1ik")

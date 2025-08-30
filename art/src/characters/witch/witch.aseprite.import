@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://dichp733jnex2"
+path="res://.godot/imported/witch.aseprite-54eaf9f8fe1f8299472d6b8005e2e3c7.res"
+
+[deps]
+
+source_file="res://art/src/characters/witch/witch.aseprite"
+dest_files=["res://.godot/imported/witch.aseprite-54eaf9f8fe1f8299472d6b8005e2e3c7.res"]
+
+[params]
+

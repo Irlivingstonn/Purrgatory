@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://dnpo3xsktpui3"
+path="res://.godot/imported/dummy.aseprite-226e2768bfb81a3c0a3536d4e7ca9b22.res"
+
+[deps]
+
+source_file="res://art/src/characters/dummy/dummy.aseprite"
+dest_files=["res://.godot/imported/dummy.aseprite-226e2768bfb81a3c0a3536d4e7ca9b22.res"]
+
+[params]
+
