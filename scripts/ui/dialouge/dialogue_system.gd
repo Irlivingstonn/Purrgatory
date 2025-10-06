@@ -3,7 +3,7 @@ extends Node2D
 const DialogueButtonPreload = preload("res://scenes/ui/dialouge/dialogue_button.tscn")
 
 @onready var DialogueLabel: RichTextLabel = $HBoxContainer/VBoxContainer/RichTextLabel
-@onready var SpeakerSprite: Sprite2D = $HBoxContainer/SpeakerParent/Sprite2D
+@onready var SpeakerSprite: Sprite2D = $SpeakerParent/Sprite2D
 
 var dialogue: Array[DE]
 var current_dialogue_item: int = 0
@@ -80,12 +80,12 @@ func _choice_resource(i: DialogueChoice) -> void:
 	DialogueLabel.text = i.text
 	DialogueLabel.visible_characters = -1
 	if i.speaker_img:
-		$HBoxContainer/SpeakerParent.visible = true
+		$SpeakerParent.visible = true
 		SpeakerSprite.texture = i.speaker_img
 		SpeakerSprite.hframes = i.speaker_img_Hframes
 		SpeakerSprite.frame = min(i.speaker_img_select_frame, i.speaker_img_Hframes-1)
 	else:
-		$HBoxContainer/SpeakerParent.visible = false
+		$SpeakerParent.visible = false
 	$HBoxContainer/VBoxContainer/button_container.visible = true
 	
 	for item in i.choice_text.size():
@@ -144,9 +144,9 @@ func _text_resource(i: DialogueText) -> void:
 		camera_tween.tween_property(camera, "global_position", i.camera_position, i.camera_transition_time)
 		
 	if !i.speaker_img:
-		$HBoxContainer/SpeakerParent.visible = false
+		$SpeakerParent.visible = false
 	else:
-		$HBoxContainer/SpeakerParent.visible = true
+		$SpeakerParent.visible = true
 		SpeakerSprite.texture = i.speaker_img
 		SpeakerSprite.hframes = i.speaker_img_Hframes
 		SpeakerSprite.frame = 0

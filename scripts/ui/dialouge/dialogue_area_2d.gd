@@ -8,7 +8,7 @@ const DialogueSystemPreload = preload("res://scenes/ui/dialouge/dialogue_system.
 @export var override_position: Vector2
 @export var dialogue: Array[DE]
 
-var cam_margin := 48
+var cam_margin := 48 + 92 + 24 + 12
 var offset := 1.85
 
 var player_body_in: bool = false

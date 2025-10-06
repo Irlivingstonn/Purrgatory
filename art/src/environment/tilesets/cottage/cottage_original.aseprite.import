@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://cbohesjvjq0r1"
+path="res://.godot/imported/cottage_original.aseprite-26c579f64e1438ba16bdfa10667d7f69.res"
+
+[deps]
+
+source_file="res://art/src/environment/tilesets/cottage/cottage_original.aseprite"
+dest_files=["res://.godot/imported/cottage_original.aseprite-26c579f64e1438ba16bdfa10667d7f69.res"]
+
+[params]
+

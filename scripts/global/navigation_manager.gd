@@ -36,7 +36,9 @@ func go_to_level(level_tag, destination_tag, Rooms, Tags):
 			
 		TransitionScreen.transition()
 		await TransitionScreen.on_transition_finished
+		print("This is the dest tag: " + str(destination_tag))
 		spawn_door_tag = Tags.find_key(destination_tag)
+		print("This is the tag: " + str(spawn_door_tag))
 		# get_tree().change_scene_to_packed(scene_to_load)
 		get_tree().change_scene_to_file(scene_to_load)
 		
